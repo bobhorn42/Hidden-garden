@@ -7,7 +7,7 @@
 		</style>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script src="yourPrivateKey.txt"></script>
-		<script src="yourCypherKey.txt"></script>
+		<script src="yourCipherKey.txt"></script>
 		<script>
 <!--
 // Labels in your language
@@ -16,7 +16,7 @@ var msg_invalidRSAPublicKey = "Invalid RSA public key";
 var msg_invalidRSAPrivateKey = "Invalid RSA private key";
 var lblAttachment = "Attachment"; //'Pièce jointe';
 var lblUpload = "Upload";
-var lblErrorInvalidPublicKey = "ERROR: this cypher key is not valid! Something went wront durint the previous steps of the process."; //"ERREUR: la clé publique donnée n'est pas valide !";
+var lblErrorInvalidPublicKey = "ERROR: this cipher key is not valid! Something went wront durint the previous steps of the process."; //"ERREUR: la clé publique donnée n'est pas valide !";
 var lblForwardInnerHTML = "Download and send the following encrypted message. The name of the message is not important, it can be modified to go unnoticed. \n"
 		+"The first time you send an encrypted message to someone, send also the file named \"2_Decryption_EnUK.html\" which function is self-explanatory. \n"
 		+"This will not be necessary anymore for the next messages to the same person, the same page could be used for decrypting them.\n";
@@ -204,7 +204,7 @@ function messageGeneration() {
 			<input type="hidden" id="filePrivateKey"/>
 			
 			<div id="loadReceiverKey">
-			Upload the cypher key which was sent to you previously. Next time, copy it in the same directory as this page in order to let it be
+			Upload the cipher key which was sent to you previously. Next time, copy it in the same directory as this page in order to let it be
 			automatically detected.<br/>
 			<label class="custom-upload"><input type="file" id="fileAESKeyinput"  onchange="readAESKey(this.files[0]);"/>Browse...</label><br/>
 			</div>
@@ -228,7 +228,7 @@ function messageGeneration() {
 			<div id="lnkForward">../..</div>
 		</div>
 		<footer id="copyright">
-			<div class="copyr">&copy; 2016 - Powered by <a href="#">yoursite.com</a></div>
+			<div class="copyr">&copy; 2016 - Powered by <a href="https://github.com/bobhorn42/Hidden-garden">Hidden-garden</a></div>
 		</footer>
 	</body>
 </html>
